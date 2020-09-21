@@ -32,7 +32,7 @@ structures. A higher degree of individual resilience and responsibility is requi
 </ul>
 
 
-####Mitigation Strategy for above risks:
+#### Mitigation Strategy for above risks:
 <ul>
 <li>Using clear communication for help with tasks</li>
 <li>Building small pieces first and iterating on those</li>

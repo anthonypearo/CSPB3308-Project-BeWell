@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Be Well</title>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" ><br><br>
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="date" ><br><br>
+  <label for="airline">Airline:</label><br>
+  <input type="text" id="airline" name="airline"><br><br>
+  Please select your symptoms:<br>
+  <input type="checkbox" id="sympt1" name="sympt1" value="Fever">
+  <label for="sympt1"> Fever</label><br>
+  <input type="checkbox" id="sympt2" name="sympt2" value="Cough">
+  <label for="sympt2"> Cough</label><br>
+  <input type="checkbox" id="sympt3" name="sympt3" value="Headache">
+  <label for="sympt3"> Headache</label><br><br>
+  Select a diagnosis:<br>
+  <input type="radio" name="choice" value="COVID-19"> COVID-19
+  <input type="radio" name="choice" value="Influenza-A"> Influenza-A
+  <input type="radio" name="choice" value="Influenza-B"> Influenza-B
+  <input type="radio" name="choice" value="Other"> Other <br><br>
+</form>
+
+<button onclick="submitAnswer()">Submit</button>
+
+<script>
+function submitAnswer() {
+	alert('Thank you!');
+    document.getElementById("myForm").submit();
+}
+</script>
+
+</body>
+</html>

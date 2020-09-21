@@ -44,11 +44,17 @@ structures. A higher degree of individual resilience and responsibility is requi
 
 #### Development method: scrum, kanban, waterfall: with specifics!
 <ul>
-<li>Kanban via Trello for story and task management</li>
+<li>Kanban via Trello for backlog, story and task management</li>
 <li>Weekly Scrum meetings (Mondays via Zoom)</li>
  <ul>
 <li>Scrum Master: Amanda Killeen</li>
 <li>Sprint Length: 1 week</li>
+<li>Number of Sprints: ~10</li>
+</ul>
+<li>Sprint Planning:</li>
+<ul>
+<li>Sprint planning will occur following our scrum meeting.</li>
+<li>Includes retrospective on previous sprint, demos from each of the team members of their work from the previous sprint, pulling in stories from the backlog for the next sprint</li>
 </ul>
 </ul>
 
@@ -56,9 +62,9 @@ structures. A higher degree of individual resilience and responsibility is requi
 #### Project Tracking Software (Trello, Github Project)
 
 <ul>
-<li>GitHub</li>
-<li>Discord (comms)</li>
-<li>Trello</li>
+<li>GitHub: https://github.com/SHollatz/CSPB3308-Project-BeWell</li>
+<li>Discord (comms): https://discord.com/channels/755550477822984214/755550477822984220</li>
+<li>Trello: https://trello.com/b/yPktmPqK/bewell-project</li>
 </ul>
 
 

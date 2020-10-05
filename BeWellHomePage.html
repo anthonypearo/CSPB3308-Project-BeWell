@@ -1,51 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    font-family:verdana;
-    background-image: url(https://storage.needpix.com/rsynced_images/jet-aircraft-in-flight.jpg)
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-li.home {
-float: left;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-</style>
+  <link rel="stylesheet" href="styles/BeWell.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <title>
 BeWell</title>
 </head>
@@ -59,14 +18,29 @@ BeWell</title>
   <li class = "home"><a href="#Home">Home</a></li>
 </ul>
 
-<div class = "center">
-<form action="/action_page.php">
-  <label for="flight">Find Your Flight</label><br><br>
-  <input type="tel" id="phone" name="phone" placeholder="Flight Number, Airline">
-  <input type="submit">
-</form>
-</div>
 
+<div class="mdl-layout__container has-scrolling-header"><div class="layout mdl-layout mdl-layout--fixed-header mdl-js-layout is-upgraded is-small-screen" data-upgraded=",MaterialLayout">
+  <div class="ribbon"></div>
+  <main class="main mdl-layout__content">
+    <div class="container mdl-grid">
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      <div class="content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--4-col">
+        <h5> Find your Flight:</h5>
+        <form action="/action_page.php">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="flightnumber">
+            <label class="mdl-textfield__label" for="flightnumber">Flight Number</label>
+          </div>
+          <div class="right">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div></div>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    let Illness = sequelize.define("illness", {
+    let Illness = sequelize.define("Illness", {
         illnessID:{
             type: DataTypes.INTEGER,
             allowNull: false,

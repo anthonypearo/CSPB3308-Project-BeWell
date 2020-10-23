@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //update so it has all the fields on the form
     let newEntry = {
       //text entries
+      userID: 2,
       firstname: document.getElementById("fname").value,
       lastname: document.getElementById("lname").value,
       //date not working yet
-      date: document.getElementById("date").value,
-      airline: document.getElementById("airline").value,
+//      date: document.getElementById("date").value,
+//      airline: document.getElementById("airline").value,
       //checkboxes ?? values for these?
       /*
       sympt1: document.getElementById("sympt1").value,
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log("newEntry: ", newEntry);
-    $.ajax("/api/entry/", {
+    $.ajax("/api/user/", {
       method: "POST",
       data: newEntry,
       success: function(res) {

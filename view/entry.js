@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //update so it has all the fields on the form
     let newEntry = {
       //text entries
-      userID: 2,
+      userID: 4,
       firstname: document.getElementById("fname").value,
       lastname: document.getElementById("lname").value,
       //date not working yet
@@ -33,5 +33,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }   
     });
   });
-
 });

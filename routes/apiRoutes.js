@@ -4,7 +4,9 @@ var db = require("../models");
 
 module.exports = function(app) {
   app.get("/api/user", function(req, res) {
+    console.log("inside apiRoutes, res");
     db.User.findAll({}).then(function(dbUser) {
+//      console.log("inside apiRoutes, dbUser: ", dbUser);
       res.json(dbUser);
     });
   });

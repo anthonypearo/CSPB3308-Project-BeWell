@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    let SubmissionDate = sequelize.define("SubmissionDate", {
+    let SubmissionSymptom = sequelize.define("SubmissionSymptom", {
         submission_symptomID:{
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -16,5 +16,5 @@ module.exports = function(sequelize, DataTypes) {
             unique: true
         }
     });
-    return SubmissionDate;
+    return SubmissionSymptom;
 };

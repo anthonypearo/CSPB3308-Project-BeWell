@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS submission
 , illnessID INTEGER NOT NULL
 , submissionDate DATE NOT NULL
 , PRIMARY KEY (submissionID)
-, FOREIGN KEY (userID) REFERENCES `user`(userID)
+, FOREIGN KEY (userID) REFERENCES users(userID)
 , FOREIGN KEY (flightID) REFERENCES flight(flightID)
 , FOREIGN KEY (illnessID) REFERENCES illness(illnessID)
 );

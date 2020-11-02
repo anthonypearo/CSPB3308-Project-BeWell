@@ -27,6 +27,7 @@ module.exports = function(app) {
       res.json(dbUser);
     });
   });
+
 };
 //Route that pulls back illnesses, symptoms, flights, list of aggregated submissions
 //each table gets it's own route/uri - one get from db and one post to write to db

@@ -15,6 +15,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
             unique: true
         }
+    }, {
+        freezeTableName: true
     });
     return SubmissionSymptom;
 };

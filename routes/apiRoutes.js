@@ -12,10 +12,12 @@ module.exports = function(app) {
   });
 
   app.post("/api/user", function(req, res) {
+
     let user = { //object
-      userID: req.body.userID,
+      //userID: req.body.userID,
       firstname: req.body.firstname,
-      lastname: req.body.lastname
+      lastname: req.body.lastname,
+      email: req.body.email
     }
     console.log("inside apiRoutes, /api/user, req.body: ", req.body)
     //breakdown incoming requests into database models

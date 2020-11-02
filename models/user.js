@@ -2,10 +2,9 @@ module.exports = function(sequelize, DataTypes) {
     let User = sequelize.define("User", {
         userID:{
             type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true
+            autoIncrement: true,
+            primaryKey: true
         },
-
         firstname: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -28,6 +27,19 @@ module.exports = function(sequelize, DataTypes) {
                 }
             }
         },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: {
+                    args: [1, 255],
+                    msg:
+                        "Please enter your email with at least 1 character but no more than 255."
+                }
+            }
+        }
+    }, {
+        freezeTableName: true
     });
     return User;
 };

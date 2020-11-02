@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS `user`
 , firstname VARCHAR(45) NOT NULL
 , lastname VARCHAR(45) NOT NULL
 , email VARCHAR(100) NOT NULL
+, createdAt VARCHAR(45) NOT NULL
+, updatedAt VARCHAR(45) NOT NULL
 , PRIMARY KEY (userID)
 );
 

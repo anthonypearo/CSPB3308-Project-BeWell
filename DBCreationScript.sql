@@ -59,10 +59,10 @@ CREATE TABLE IF NOT EXISTS submission
 );
 
 CREATE TABLE IF NOT EXISTS submissionSymptom
-(submissionSymptonID INTEGER NOT NULL AUTO_INCREMENT
+(submissionSymptomID INTEGER NOT NULL AUTO_INCREMENT
 , submissionID INTEGER NOT NULL
 , symptomID INTEGER NOT NULL
-, PRIMARY KEY (submissionSymptonID)
+, PRIMARY KEY (submissionSymptomID)
 , FOREIGN KEY (submissionID) REFERENCES submission(submissionID)
 , FOREIGN KEY (symptomID) REFERENCES symptom(symptomID)
 );

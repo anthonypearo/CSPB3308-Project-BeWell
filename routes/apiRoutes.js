@@ -1,5 +1,5 @@
 
-var db = require("../models");
+var db = require("../models/Multi-Tables");
 //console.log("inside apiRoutes, db: ", db);
 
 module.exports = function(app) {

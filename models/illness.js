@@ -1,10 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
     let Illness = sequelize.define("Illness", {
-        illnessID:{
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true
-        },
 
         illnessName: {
             type: DataTypes.STRING,

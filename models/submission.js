@@ -1,10 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     let SubmissionDate = sequelize.define("Submission", {
-        submissionID:{
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true
-        },
+
         userID:{
             type: DataTypes.INTEGER,
             allowNull: false,

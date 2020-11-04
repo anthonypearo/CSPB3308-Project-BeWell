@@ -1,11 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
     let Flight = sequelize.define("Flight", {
-        flightID:{
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true
-        },
-
         flightDate: {
             type: DataTypes.DATE,
             allowNull: false,

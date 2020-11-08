@@ -28,8 +28,14 @@ function checkEmail(potentialEmail){
 }
 
 function checkTextInput(potentialName){
-	var nameFormat = /[A-Za-z]+[-.A-Za-z]*/;
+	//console.log("inside "+potentialName)
+	var nameFormat = /^[A-Za-z]+[-.A-Za-z]*/;
 	return(nameFormat.test(potentialName))
 }
 
-module.exports = checkEmail, checkTextInput
+const functions = {
+	checkEmail: checkEmail,
+	checkTextInput: checkTextInput
+}
+
+module.exports = functions

@@ -31,7 +31,9 @@ There are 4 sets of unit tests:
        
         DROP DATABASE bewell_db;
         CREATE DATABASE bewell_db;
-2. In the directory where you cloned the repository, input ```npm test``` in the CLI and the tests will run automatically.
+2. Change password in config.json to your local settings.
+3. In a second terminal start the server with ```node server.js```
+4. In the directory where you cloned the repository, input ```npm test``` in the CLI and the tests will run automatically.
 
 
 ## User Acceptance Testing
@@ -247,6 +249,7 @@ There are 4 sets of unit tests:
     - Need to pass the filter parameters to the page
 - Post-conditions
     - Table result empty, but resets when reloaded.
+
 ##### Use Case Name: Flight Data Flight Number - Invalid
 - Description
     - Test the table population with a Flight Number that isn't in the table.
@@ -267,6 +270,7 @@ There are 4 sets of unit tests:
     - Need to pass the filter parameters to the page
 - Post-conditions
     - Table result empty, but resets when reloaded.
+
 ##### Use Case Name: Flight Data Status - Invalid
 - Description
     - Test the table population with a Status that isn't in the table.
